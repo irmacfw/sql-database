@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS airbnb_miniproject_mysql;
-USE airbnb_miniproject_mysql;
+CREATE DATABASE IF NOT EXISTS airbnb_mysql;
+USE airbnb_mysql;
 
 /*
 CREATE TABLE `hosts`(
@@ -24,7 +24,7 @@ CREATE TABLE `rooms_type`(
 CREATE TABLE `listings`(
     `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(255) NOT NULL,
-    `host_id` BIGINT UNSIGNED NOT NULL,
+    -- `host_id` BIGINT UNSIGNED NOT NULL,
     `neighbourhood_id` INT UNSIGNED NOT NULL,
     `room_type_id` INT UNSIGNED NOT NULL,
     `price` INT NOT NULL,
@@ -42,4 +42,12 @@ VALUE ('Brooklyn'),
 ('Staten Island'),
 ('Bronx');
 
-select * from airbnb_miniproject_mysql.neighbourhood_groups;
+select * from airbnb_mysql.neighbourhood_groups;
+select * from airbnb_mysql.neighbourhoods;
+
+select name from airbnb_mysql.neighbourhood_groups as ng
+	where ng_id  in (
+select distinct ng_id  from airbnb_mysql.neighbourhoods as n);
+
+select * from airbnb_mysql.neighbourhoods order by name ASC;
+
