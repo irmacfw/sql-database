@@ -1,0 +1,222 @@
+neighbourhood_group,neighbourhood
+5,Allerton
+5,Baychester
+5,Belmont
+5,Bronxdale
+5,Castle Hill
+5,City Island
+5,Claremont Village
+5,Clason Point
+5,Co-op City
+5,Concourse
+5,Concourse Village
+5,East Morrisania
+5,Eastchester
+5,Edenwald
+5,Fieldston
+5,Fordham
+5,Highbridge
+5,Hunts Point
+5,Kingsbridge
+5,Longwood
+5,Melrose
+5,Morris Heights
+5,Morris Park
+5,Morrisania
+5,Mott Haven
+5,Mount Eden
+5,Mount Hope
+5,North Riverdale
+5,Norwood
+5,Olinville
+5,Parkchester
+5,Pelham Bay
+5,Pelham Gardens
+5,Port Morris
+5,Riverdale
+5,Schuylerville
+5,Soundview
+5,Spuyten Duyvil
+5,Throgs Neck
+5,Tremont
+5,Unionport
+5,University Heights
+5,Van Nest
+5,Wakefield
+5,West Farms
+5,Westchester Square
+5,Williamsbridge
+5,Woodlawn
+1,Bath Beach
+1,Bay Ridge
+1,Bedford-Stuyvesant
+1,Bensonhurst
+1,Bergen Beach
+1,Boerum Hill
+1,Borough Park
+1,Brighton Beach
+1,Brooklyn Heights
+1,Brownsville
+1,Bushwick
+1,Canarsie
+1,Carroll Gardens
+1,Clinton Hill
+1,Cobble Hill
+1,Columbia St
+1,Coney Island
+1,Crown Heights
+1,Cypress Hills
+1,DUMBO
+1,Downtown Brooklyn
+1,Dyker Heights
+1,East Flatbush
+1,East New York
+1,Flatbush
+1,Flatlands
+1,Fort Greene
+1,Fort Hamilton
+1,Gowanus
+1,Gravesend
+1,Greenpoint
+1,Kensington
+1,Manhattan Beach
+1,Midwood
+1,Mill Basin
+1,Navy Yard
+1,Park Slope
+1,Prospect Heights
+1,Prospect-Lefferts Gardens
+1,Red Hook
+1,Sea Gate
+1,Sheepshead Bay
+1,South Slope
+1,Sunset Park
+1,Vinegar Hill
+1,Williamsburg
+1,Windsor Terrace
+2,Battery Park City
+2,Chelsea
+2,Chinatown
+2,Civic Center
+2,East Harlem
+2,East Village
+2,Financial District
+2,Flatiron District
+2,Gramercy
+2,Greenwich Village
+2,Harlem
+2,Hell's Kitchen
+2,Inwood
+2,Kips Bay
+2,Little Italy
+2,Lower East Side
+2,Marble Hill
+2,Midtown
+2,Morningside Heights
+2,Murray Hill
+2,NoHo
+2,Nolita
+2,Roosevelt Island
+2,SoHo
+2,Stuyvesant Town
+2,Theater District
+2,Tribeca
+2,Two Bridges
+2,Upper East Side
+2,Upper West Side
+2,Washington Heights
+2,West Village
+3,Arverne
+3,Astoria
+3,Bay Terrace
+3,Bayside
+3,Bayswater
+3,Belle Harbor
+3,Bellerose
+3,Breezy Point
+3,Briarwood
+3,Cambria Heights
+3,College Point
+3,Corona
+3,Ditmars Steinway
+3,Douglaston
+3,East Elmhurst
+3,Edgemere
+3,Elmhurst
+3,Far Rockaway
+3,Flushing
+3,Forest Hills
+3,Fresh Meadows
+3,Glendale
+3,Hollis
+3,Holliswood
+3,Howard Beach
+3,Jackson Heights
+3,Jamaica
+3,Jamaica Estates
+3,Jamaica Hills
+3,Kew Gardens
+3,Kew Gardens Hills
+3,Laurelton
+3,Little Neck
+3,Long Island City
+3,Maspeth
+3,Middle Village
+3,Neponsit
+3,Ozone Park
+3,Queens Village
+3,Rego Park
+3,Richmond Hill
+3,Ridgewood
+3,Rockaway Beach
+3,Rosedale
+3,South Ozone Park
+3,Springfield Gardens
+3,St. Albans
+3,Sunnyside
+3,Whitestone
+3,Woodhaven
+3,Woodside
+4,Arden Heights
+4,Arrochar
+4,"Bay Terrace, Staten Island"
+4,Bull's Head
+4,Castleton Corners
+4,Clifton
+4,Concord
+4,Dongan Hills
+4,Eltingville
+4,Emerson Hill
+4,Fort Wadsworth
+4,Graniteville
+4,Grant City
+4,Great Kills
+4,Grymes Hill
+4,Howland Hook
+4,Huguenot
+4,Lighthouse Hill
+4,Mariners Harbor
+4,Midland Beach
+4,New Brighton
+4,New Dorp
+4,New Dorp Beach
+4,New Springville
+4,Oakwood
+4,Port Richmond
+4,Prince's Bay
+4,Randall Manor
+4,Richmondtown
+4,Rosebank
+4,Rossville
+4,Shore Acres
+4,Silver Lake
+4,South Beach
+4,St. George
+4,Stapleton
+4,Todt Hill
+4,Tompkinsville
+4,Tottenville
+4,West Brighton
+4,Westerleigh
+4,Willowbrook
+4,Woodrow
