@@ -127,7 +127,7 @@ Custom Python functions (in `src/functions.py`, referenced but not included here
 ## Authors
 - Ricardo Castanheira
 - Irma Fernandez
-- J
+- Janna Julian
 - Luis Pablo Aiello
 
 ## License
