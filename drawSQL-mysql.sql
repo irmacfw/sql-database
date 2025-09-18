@@ -1,5 +1,12 @@
 CREATE DATABASE IF NOT EXISTS airbnb_mysql;
 
+/*
+Schema References:
+The listings table holds individual Airbnb listings, with fields for price, minimum nights, room type, neighborhood, and availability.
+The neighbourhoods table links each listing to a neighborhood, which is part of a borough (neighbourhood_groups table).
+The rooms_type table describes the type of room for each listing.
+*/
+
 -- Setting the working database
 USE airbnb_mysql;
 
