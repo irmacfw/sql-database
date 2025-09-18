@@ -59,6 +59,7 @@ VALUE ('Private room'),
 ('Entire home/apt'),
 ('Shared room');
 
+
 select * from airbnb_mysql.neighbourhood_groups;
 select * from airbnb_mysql.rooms_type;
 
@@ -73,7 +74,12 @@ select * from airbnb_mysql.listings;
 
 select name from airbnb_mysql.neighbourhood_groups as ng
 	where ng_id  in (
-select distinct ng_id  from airbnb_mysql.neighbourhoods as n);
+select distinct ng_id from airbnb_mysql.neighbourhoods as n);
+
+select name from airbnb_mysql.neighbourhoods as n
+	where ng_id  in (
+select ng_id from airbnb_mysql.neighbourhood_groups as ng 
+	where ng.name in ('Manhattan'));
 
 
 

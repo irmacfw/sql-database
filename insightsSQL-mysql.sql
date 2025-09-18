@@ -110,6 +110,6 @@ FROM airbnb_mysql.listings as l
 JOIN airbnb_mysql.neighbourhoods as n  ON l.neighbourhood_id = n.neighbourhood_ID
 JOIN airbnb_mysql.neighbourhood_groups as ng ON n.ng_ID = ng.ng_ID
 GROUP BY ng.name, n.name
-HAVING COUNT(*) >= 1            
+HAVING COUNT(*) >= 30           
 ORDER BY avg_price DESC
 LIMIT 5;
