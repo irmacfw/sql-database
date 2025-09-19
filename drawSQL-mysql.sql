@@ -59,6 +59,7 @@ VALUE ('Private room'),
 ('Entire home/apt'),
 ('Shared room');
 
+-- Simple SQl queries to validate data loading in each table --
 
 select * from airbnb_mysql.neighbourhood_groups;
 select * from airbnb_mysql.rooms_type;
@@ -81,5 +82,46 @@ select name from airbnb_mysql.neighbourhoods as n
 select ng_id from airbnb_mysql.neighbourhood_groups as ng 
 	where ng.name in ('Manhattan'));
 
+-- Simple JOIN SQl queries to validate linked data between tables --
 
+-- Count listings per neighbourhood (showing both neighbourhood and neighbourhood_group):
+SELECT 
+    ng.name AS neighbourhood_group,
+    n.name AS neighbourhood,
+    COUNT(*) AS listings_count
+FROM listings l
+JOIN neighbourhoods n ON l.neighbourhood_id = n.neighbourhood_ID
+JOIN neighbourhood_groups ng ON n.ng_id = ng.ng_ID
+GROUP BY ng.name, n.name
+ORDER BY listings_count DESC;
 
+-- Count listings per neighbourhood_group (borough):
+SELECT 
+    ng.name AS neighbourhood_group,
+    COUNT(*) AS listings_count
+FROM listings l
+JOIN neighbourhoods n ON l.neighbourhood_id = n.neighbourhood_ID
+JOIN neighbourhood_groups ng ON n.ng_id = ng.ng_ID
+GROUP BY ng.name
+ORDER BY listings_count DESC;
+
+-- Count listings per type of room
+SELECT
+    rt.type AS room_type,
+    COUNT(*) AS listings_count
+FROM listings l
+JOIN rooms_type rt ON l.room_type_id = rt.room_type_ID
+GROUP BY rt.type
+ORDER BY listings_count DESC;
+
+-- Count listings per type of room and per neighbourhood_group
+SELECT
+    ng.name AS neighbourhood_group,
+    rt.type AS room_type,
+    COUNT(*) AS listings_count
+FROM listings l
+JOIN neighbourhoods n ON l.neighbourhood_id = n.neighbourhood_ID
+JOIN neighbourhood_groups ng ON n.ng_id = ng.ng_ID
+JOIN rooms_type rt ON l.room_type_id = rt.room_type_ID
+GROUP BY ng.name, rt.type
+ORDER BY ng.name, listings_count DESC;
