@@ -122,7 +122,7 @@ Custom Python functions (in `src/functions.py`, referenced but not included here
 - Reference CSVs: `NYC_Neighbourhoods_2019.csv`, `NYC_Airbnb_Room_Types_ID.csv`, etc.
 
 ## Presentation Slides
-[Link to Slides](YOUR_SLIDES_URL_HERE)
+[Link to Slides](https://docs.google.com/presentation/d/1fDsE9lEGz5-o3DHoFpw40KqCYZZhyjZGlEdcj_FNNJ0/edit?slide=id.p1#slide=id.p1)
 
 ## Authors
 - Ricardo Castanheira
