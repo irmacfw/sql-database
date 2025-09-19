@@ -3,7 +3,7 @@ USE airbnb_mysql;
 
 -- 6 Queries for insights
 
--- A) Average price per Neighbourhood Group in New York
+-- A) Average price per borough in New York
 /*
 What does it do?
 This query calculates the average price of Airbnb listings in each borough of New York City.
@@ -23,7 +23,7 @@ JOIN airbnb_mysql.neighbourhood_groups ng ON n.ng_ID = ng.ng_ID
 GROUP BY ng.name
 ORDER BY avg_price DESC;
 
--- B) Most frequent room type per Neighbourhood Group in New York
+-- B) Most frequent room type per borough in New York
 /*
 What does it do?
 This query finds the most common type of Airbnb room (e.g., entire home, private room) in each borough.
@@ -35,7 +35,7 @@ Using a “window function” (ROW_NUMBER), it ranks the room types by frequency
 It then selects only the top-ranked (most frequent) room type per borough
 */
 WITH counts AS (
-  SELECT ng.name AS borough, r.type, COUNT(*) AS amount,
+  SELECT ng.name AS borough, r.type, COUNT(*) AS count,
          ROW_NUMBER() OVER (PARTITION BY ng.name ORDER BY COUNT(*) DESC) AS rn
   FROM airbnb_mysql.listings as l
   JOIN airbnb_mysql.rooms_type as r ON l.room_type_id = r.room_type_ID
@@ -43,12 +43,12 @@ WITH counts AS (
   JOIN airbnb_mysql.neighbourhood_groups as ng ON n.ng_ID = ng.ng_ID
   GROUP BY ng.name, r.type
 )
-SELECT borough, type, amount
+SELECT borough, type, count
 FROM counts
 WHERE rn = 1
 ORDER BY borough;
 
--- C) Average minimum nights per Neighbourhood Group in New York
+-- C) Average minimum nights per borough in New York
 /*
 What does it do?
 This query calculates the average minimum stay requirement (in nights) for Airbnb listings in each borough.
