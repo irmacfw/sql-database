@@ -82,7 +82,7 @@ select name from airbnb_mysql.neighbourhoods as n
 select ng_id from airbnb_mysql.neighbourhood_groups as ng 
 	where ng.name in ('Manhattan'));
 
--- Simple JOIN SQl queries to validate data integrity between tables --
+-- Simple JOIN SQl queries to validate Foreign keys constraints between tables. --
 
 -- Count listings per neighbourhood (showing both neighbourhood and neighbourhood_group):
 SELECT 
